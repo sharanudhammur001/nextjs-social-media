@@ -91,7 +91,7 @@ function page() {
           </div>
           <div className='forgotpassword'>Forgot password?</div>
           <div className="hr"></div>
-          <div className='footer'>Dont have an account? <Link href='/register'>Register</Link></div>
+          <div className='footer'>Dont have an account???? <Link href='/register'>Register</Link></div>
           {/* <div className='or'>
             <div className="line"></div>
             <div>or</div>
