@@ -1,0 +1,28 @@
+.userinfoLayout {
+    padding: 78px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin: auto;
+    width: 968px;
+
+    .feedsandabout {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .userinfoLayout {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .userinfoLayout {
+        width: 868px;
+    }
+}

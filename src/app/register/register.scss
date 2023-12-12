@@ -1,0 +1,73 @@
+.register {
+    height: 100vh;
+    background-color: #3b5998;
+
+    .container {
+        width: 350px;
+        // background-color: gainsboro;
+        margin: auto;
+        padding: 20px;
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            padding: 35px 25px;
+            border-radius: 5px;
+            background-color: white;
+            gap: 18px;
+            margin-top: 80px;
+
+            .header {
+                // text-align: center;
+                font-size: 18px;
+            }
+
+            .body {
+
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    label {
+                        font-size: 14px;
+                        color: gray;
+                    }
+
+                    input {
+                        padding: 13px;
+                        outline: none;
+                        border: 1px solid #3b5998;
+                        border-radius: 4px;
+                        font-size: 16px;
+                    }
+
+                    button {
+                        padding: 13px;
+                        border-radius: 5px;
+                        background-color: #3b5998;
+                        color: white;
+                        outline: none;
+                        border: 0px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+
+            .footer {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                a{
+                    margin-left: 4px;
+                }
+            }
+
+
+        }
+    }
+}

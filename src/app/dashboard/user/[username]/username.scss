@@ -1,0 +1,18 @@
+.username{
+    .container{
+        .user_detail{
+            display: flex;
+            align-items: center;
+            img{
+                height: 60px;
+                width: 60px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .username{
+                font-size: 20px;
+                margin-top: -10px;
+            }
+        }
+    }
+}

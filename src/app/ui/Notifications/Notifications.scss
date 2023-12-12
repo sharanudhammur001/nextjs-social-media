@@ -1,0 +1,100 @@
+.notifications {
+    border-radius: 10px;
+    // position: sticky;
+    // top: 368px;
+
+    .container {
+        padding: 0px 15px 15px 15px;
+
+        // height: 100%;
+        // height: -webkit-fill-available;
+        .request {
+            font-size: 18px;
+            padding: 15px 10px 10px 15px;
+        }
+
+        .chat_list {
+            display: flex;
+            flex-direction: column;
+            // gap: 10px;
+            // height: calc(100vh - 100px);
+            overflow: hidden;
+
+            .chat {
+                display: grid;
+                grid-template-columns: auto 1fr;
+
+                // align-items: end;
+                gap: 10px;
+                .user_name{
+                    // width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .name{
+                        font-size: 15px;
+                        font-weight: 500;
+                        span{
+                            color: gray;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .profile_pic_no_wrapper {
+                    // border: 2px solid white;
+                    // padding: 2px;
+                    border-radius: 50%;
+                    height: 40px;
+                    width: 40px;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .actions{
+            display: flex;
+            gap: 8px;
+            // margin: 10px 0px 0px 0px;
+            // width: 100%;
+            // background-color: red;
+            button{
+                // background-color: #3b5998;
+                // width: 100%;
+            }
+        }
+
+        .chat_list:hover {
+            overflow-y: auto;
+            /* Show scrollbar on hover */
+        }
+
+        /* Styling the scrollbar */
+        .custom-chat_list::-webkit-scrollbar-thumb {
+            background-color: transparent;
+        }
+
+        .chat_list::-webkit-scrollbar {
+            width: 5px;
+            /* Width of the scrollbar */
+        }
+
+        .chat_list::-webkit-scrollbar-thumb {
+            background-color: #da9c93;
+            /* Color of the scrollbar thumb */
+            border-radius: 5px;
+            /* Rounded corners of the thumb */
+        }
+
+        .chat_list::-webkit-scrollbar-track {
+            background-color: #eee;
+            /* Color of the scrollbar track */
+        }
+    }
+}

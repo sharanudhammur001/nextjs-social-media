@@ -1,0 +1,33 @@
+.addpost {
+    display: flex;
+    padding-bottom: 10px;
+
+    .container {
+        width: 100%;
+
+        .section_1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .start_post {
+                padding: 10px 15px;
+                border-radius: 4px;
+                background-color: #3b5998;
+                color: white;
+            }
+        }
+
+        // .section_2{
+        //     display: flex;
+        //     justify-content: space-around;
+        // }
+    }
+}

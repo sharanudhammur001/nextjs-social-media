@@ -1,0 +1,48 @@
+.navbar {
+    // background-color: #d55845;
+    background-color: white;
+    color: #3b5998;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 2;
+
+    .container {
+        margin: auto;
+        width: 1168px;
+        display: flex;
+        align-items: center;
+        height: 65px;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .menus {
+            display: flex;
+            gap: 25px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        .container {
+            width: 960px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        .container {
+            width: 838px;
+        }
+    }
+}

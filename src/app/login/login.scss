@@ -1,0 +1,142 @@
+.login {
+    height: 100vh;
+    background-color: #3b5998;
+
+    .container {
+        width: 400px;
+        // background-color: gainsboro;
+        margin: auto;
+        padding: 20px;
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            padding: 35px 25px;
+            border-radius: 5px;
+            background-color: white;
+            gap: 18px;
+            margin-top: 80px;
+
+            .header {
+                text-align: center;
+                font-size: 22px;
+                font-weight: 500;
+                color: #2a74de;
+                display: flex;
+                justify-content: center;
+                height: 50px;
+                img{
+                    height: 80px;
+                    margin-top: -20px;
+                }
+            }
+
+            .body {
+
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .error_message{
+                    color: red;
+                    border: 1px solid #e19e8a;
+                    border-radius: 4px;
+                    text-align: center;
+                    padding: 7px 12px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #fcdde1;
+                    font-size: 14px;
+                    .closeIcon{
+                        width: 16px;
+                        cursor: pointer;
+                    }
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    label {
+                        font-size: 14px;
+                        color: gray;
+                    }
+
+                    input {
+                        padding: 8px 13px;
+                        outline: none;
+                        border: 1px solid rgb(209 213 219);
+                        border-radius: 4px;
+                        font-size: 16px;
+                        // border: 2px solid #3b5998;
+                        &:focus{
+                            border: 1px solid #3b82f6;
+                            outline: 1px solid #3b82f6;
+                            // transition: outline 2s;
+                        }
+                        &::placeholder{
+                            color: rgb(176, 174, 174);
+                        }
+                    }
+
+                    button {
+                        // padding: 21px;
+                        border-radius: 5px;
+                        background-color: #3b82f6;
+                        color: white;
+                        outline: none;
+                        border: 0px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .forgotpassword{
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+                color: #2a74de;
+                font-weight: 500;
+                a {
+                    margin-left: 4px;
+                }
+            }
+            .or{
+                display: grid;
+                grid-template-columns: 1fr 40px 1fr;
+                align-items: center;
+                text-align: center;
+
+                .line{
+                    height: 2px;
+                    background-color: lightgray;
+                }
+                div{
+                    // border-bottom: 1px solid red;
+                }
+            }
+
+            .footer {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    margin-left: 4px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .login {
+        .container {
+            width: 100%;
+            /* Occupy full width of the screen */
+        }
+    }
+}

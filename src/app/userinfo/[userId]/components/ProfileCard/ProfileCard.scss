@@ -1,0 +1,68 @@
+.userinfo_profilecard {
+    .container {
+        .wrapper {
+            .coverPic {
+                height: 300px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 4px;
+                }
+            }
+
+            .footer {
+                .imagaWrapper{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        object-fit: cover;
+                        margin: auto;
+                        border-radius: 50%;
+                        margin-top: -115px;
+                        background-color: white;
+                        padding: 7px;
+                    }
+                }
+                .userdetail{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 3px;
+                    margin-top: -7px;
+                    .username{
+                        font-size: 32px;
+                        font-weight: 500;
+                    }
+                    .followers{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #65676B;
+                    }
+                }
+                .actions{
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+                    gap: 15px;
+                    padding: 10px;
+                    // padding-right: 20px;
+                    // padding-top: 10px;
+                    button{
+                        padding: 10px 25px;
+                        font-size: 16px;
+                    }
+                    
+                }
+
+
+                padding-top: 10px;
+                display: grid;
+                grid-template-columns: 3fr 4fr 3fr;
+            }
+        }
+    }
+}
